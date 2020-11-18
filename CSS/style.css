@@ -1,9 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
+p {
+  padding: 1rem 0.5rem;
+}
+
+/*****************************************/
+/*****************************************/
+/* HERO - HEADER SECTION */
+
+page-link,
+a {
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
 }
@@ -16,13 +33,12 @@ li {
 
 .nav-list {
   margin: 0;
-  text-transform: uppercase;
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 #hero {
   background-image: url("../media/images/wallpaper.jpg");
-  height: 800px;
+  height: 1080px;
   max-width: 100%;
   margin: 0;
   padding: 2rem 0 0 0;
@@ -31,22 +47,24 @@ li {
 #introduction {
   text-align: center;
   background: pink;
-  position: relative;
-  top: 100px;
+  padding: 3rem;
+  width: 40%;
+  margin: auto;
+  margin-top: 15%;
 }
 
 .container {
   background-color: pink;
   text-align: center;
   width: 80%;
+  height: auto;
   margin: auto;
 }
 
 section {
-  height: 1080px;
   width: 100%;
-  padding: 1rem;
   margin: auto;
+  padding: 0;
   background-color: blanchedalmond;
 }
 
@@ -55,12 +73,14 @@ h1 {
   font-size: 6rem;
 }
 
+/*****************************************/
+/*****************************************/
 /* ABOUT ME SECTION */
 
 h2 {
   text-align: center;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding: 2rem 0rem;
+  margin: 0;
   font-family: "Libre Baskerville", serif;
   font-size: 35px;
 }
@@ -68,29 +88,37 @@ h2 {
 h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
+  padding: 1rem;
 }
 
-h4 {
+h4,
+#lang-and-tools {
   font-family: "Libre Baskerville", serif, italic;
   font-size: 20px;
-  padding: 0;
-  margin: 0;
   position: relative;
-  bottom: 50px;
-  left: 150px;
+  bottom: 40px;
+  text-align: right;
+  width: auto;
 }
 
 p {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
+  font-size: 18px;
 }
 
 #about-me {
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.801);
-  width: 80%;
-  margin: auto;
-  height: 1000px;
+  height: auto;
+}
+
+#about-cont {
+  height: 800px;
+  background-color: #5c5a5841;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .about-pars {
@@ -122,9 +150,11 @@ p {
   height: 300px;
   position: relative;
   left: 50%;
-  bottom: 30rem;
+  bottom: 600px;
   background-color: rgba(191, 125, 45, 0.586);
   border-radius: 10px;
+  padding: 0;
+  margin: 0;
 }
 #outer-box {
   padding: 1rem 0 1rem;
@@ -134,52 +164,90 @@ p {
   padding: 1rem 0;
   margin: 0 1rem;
 }
+
+/*****************************************/
+/*****************************************/
 /* Portfolio */
 
 #portfolio {
-  padding: 1rem 0 1rem;
   background-color: #ead6c4;
   height: auto;
 }
 
 .project {
   background-color: white;
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 10px;
   padding: 1rem;
 }
 
 .project-image {
-  width: 250px;
+  width: 400px;
   height: auto;
   border-radius: 5px;
-  padding: 1rem;
 }
 .proj-name {
-  padding: 0 2rem 0;
+  margin: 1rem 2rem;
+  padding: 0;
   text-align: left;
+  width: 40%;
 }
 .proj-desc {
-  padding: 0 2rem 0;
+  margin: 1rem 2rem;
+  padding: 0;
   text-align: left;
+  width: 70%;
 }
 
+/*****************************************/
+/*****************************************/
 /* Blog */
 
 #blog {
   background-color: rgba(255, 255, 255, 0.801);
-  padding: 1rem 0 1rem;
-  height: 1000px;
+  height: auto;
+  padding-bottom: 100px;
 }
 
+#written-intro {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.story-card {
+  background-color: aliceblue;
+  width: 75%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.story-title {
+  text-align: left;
+}
+
+.story-img {
+  width: 150px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.story-desc {
+  font-size: 16px;
+}
+
+/*****************************************/
+/*****************************************/
 /* Contact Me */
 
 #contact {
-  padding: 1rem 0 1rem;
   background-color: #ead6c4;
   height: 1000px;
 }
 
+/*****************************************/
+/*****************************************/
 /* Footer */
 
 .footer {
