@@ -243,7 +243,41 @@ p {
 
 #contact {
   background-color: #ead6c4;
-  height: 1000px;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+form {
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* background-color: rgba(145, 49, 49, 0.693); */
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  margin: 1rem;
+}
+#contact-button {
+  height: 50px;
+  width: 100%;
+  margin: 50px 0;
 }
 
 /*****************************************/
