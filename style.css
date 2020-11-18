@@ -17,7 +17,6 @@ p {
 /*****************************************/
 /* HERO - HEADER SECTION */
 
-page-link,
 a {
   text-decoration: none;
 }
@@ -54,7 +53,7 @@ li {
 }
 
 .container {
-  background-color: pink;
+  background-color: ;
   text-align: center;
   width: 80%;
   height: auto;
@@ -91,7 +90,6 @@ h3 {
   padding: 1rem;
 }
 
-h4,
 #lang-and-tools {
   font-family: "Libre Baskerville", serif, italic;
   font-size: 20px;
@@ -114,7 +112,7 @@ p {
 
 #about-cont {
   height: 800px;
-  background-color: #5c5a5841;
+  /* background-color: #5c5a5841; */
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 100px;
@@ -142,7 +140,7 @@ p {
   z-index: 5;
   padding: 0;
   margin: 0;
-  box-shadow: black 5px;
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 #tech-stack {
@@ -182,7 +180,7 @@ p {
 }
 
 .project-image {
-  width: 400px;
+  width: 350px;
   height: auto;
   border-radius: 5px;
 }
@@ -190,7 +188,7 @@ p {
   margin: 1rem 2rem;
   padding: 0;
   text-align: left;
-  width: 40%;
+  width: auto;
 }
 .proj-desc {
   margin: 1rem 2rem;
@@ -217,14 +215,19 @@ p {
 }
 
 .story-card {
-  background-color: aliceblue;
+  background-color: rgba(245, 237, 229, 0.96);
   width: 75%;
-  margin: auto;
-  border-radius: 5px;
+  margin: 1rem auto 1rem;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .story-title {
   text-align: left;
+  font-family: "Libre Baskerville", serif, italic;
+  font-size: 19px;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .story-img {
@@ -235,6 +238,9 @@ p {
 
 .story-desc {
   font-size: 16px;
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
 }
 
 /*****************************************/
@@ -251,6 +257,7 @@ label {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
+  padding: 2rem;
 }
 form {
   box-sizing: border-box;
@@ -266,18 +273,19 @@ input {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  margin: 1rem 0;
+
   padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 textarea {
   width: 100%;
-  margin: 1rem;
 }
 #contact-button {
-  height: 50px;
+  height: 40px;
   width: 100%;
   margin: 50px 0;
+  background-color: crimson;
+  border-radius: 5px;
 }
 
 /*****************************************/
