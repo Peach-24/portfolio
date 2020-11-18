@@ -13,6 +13,10 @@ p {
   padding: 1rem 0.5rem;
 }
 
+a:hover {
+  color: orangered;
+}
+
 /*****************************************/
 /*****************************************/
 /* HERO - HEADER SECTION */
@@ -20,6 +24,7 @@ p {
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
 }
@@ -195,6 +200,7 @@ p {
   padding: 0;
   text-align: left;
   width: 70%;
+  font-size: 16px;
 }
 
 /*****************************************/
@@ -212,6 +218,7 @@ p {
   margin: auto;
   text-align: left;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .story-card {
@@ -266,14 +273,12 @@ form {
   margin-top: 1rem;
   margin-bottom: 1rem;
   /* background-color: rgba(145, 49, 49, 0.693); */
-  display: inline-block;
 }
 
 input {
   width: 100%;
   height: auto;
   border-radius: 5px;
-
   padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
@@ -284,7 +289,19 @@ textarea {
   height: 40px;
   width: 100%;
   margin: 50px 0;
-  background-color: crimson;
+  background-color: rgba(220, 20, 60, 0.576);
+  border-radius: 5px;
+}
+
+.fas {
+  font-size: 25px;
+}
+
+#contact-button:hover {
+  height: 40px;
+  width: 100%;
+  margin: 50px 0;
+  background-color: rgb(233, 28, 69);
   border-radius: 5px;
 }
 
@@ -292,7 +309,29 @@ textarea {
 /*****************************************/
 /* Footer */
 
-.footer {
-  background-color: red;
+h6 {
+  font-size: 20px;
+}
+
+footer {
+  height: 50px;
+  background-color: #fff;
   padding: 1rem;
+}
+
+.fab {
+  font-size: 25px;
+}
+
+/*****************************************/
+/*****************************************/
+/* Animations */
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
 }

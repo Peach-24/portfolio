@@ -15,6 +15,16 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Libre+Baskerville:ital@0;1&family=Work+Sans:wght@200;300;500&display=swap");
     </style>
+
+    <!--- FONT AWESOME & ICONS-->
+    <script
+      src="https://kit.fontawesome.com/62a7de5551.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!--
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Libre Baskerville', serif;
@@ -60,7 +70,7 @@ font-family: 'Work Sans', sans-serif;
           alt="software developer"
         />
 
-        <div class="about-pars">
+        <div class="about-pars" data-aos="fade-up">
           <h3>Hello world.</h3>
 
           <p>
@@ -92,7 +102,7 @@ font-family: 'Work Sans', sans-serif;
           </p>
         </div>
 
-        <div id="tech-stack">
+        <div id="tech-stack" data-aos="fade-up">
           <div id="outer-box">
             <h4 id="lang-and-tools"><em>Languages and tools</em></h4>
             <div class="logo-row">
@@ -126,7 +136,7 @@ font-family: 'Work Sans', sans-serif;
     <section id="portfolio">
       <h2>my projects</h2>
 
-      <div class="container">
+      <div class="container" data-aos="fade-down">
         <table>
           <tr>
             <td>
@@ -206,8 +216,8 @@ font-family: 'Work Sans', sans-serif;
 
     <section id="blog">
       <h2>written work</h2>
-      <div class="container">
-        <div id="written-intro">
+      <div class="container" id="blog-posts-cont">
+        <div id="written-intro" data-aos="zoom-out">
           <p>
             Here you can find interviews that I've conducted with icons of
             Manchester's tech scene. Some were written when promoting
@@ -226,7 +236,7 @@ font-family: 'Work Sans', sans-serif;
             page.
           </p>
         </div>
-        <div class="story-card">
+        <div class="story-card" data-aos="fade-up">
           <img class="story-img" src="media/images/jon-corner.jpg" />
           <div class="blog-preview">
             <h4 class="story-title">
@@ -244,7 +254,7 @@ font-family: 'Work Sans', sans-serif;
             </p>
           </div>
         </div>
-        <div class="story-card">
+        <div class="story-card" data-aos="fade-up">
           <img class="story-img" src="media/images/katy-social-chain.jpeg" />
           <div class="blog-preview">
             <h4 class="story-title">
@@ -263,7 +273,7 @@ font-family: 'Work Sans', sans-serif;
           </div>
         </div>
 
-        <div class="story-card">
+        <div class="story-card" data-aos="fade-up">
           <img class="story-img" src="media/images/aine-featured-dcf.jpeg" />
           <div class="blog-preview">
             <h4 class="story-title">
@@ -282,7 +292,7 @@ font-family: 'Work Sans', sans-serif;
             </p>
           </div>
         </div>
-        <div class="story-card">
+        <div class="story-card" data-aos="fade-up">
           <img class="story-img" src="media/images/stuart-clarke-hi-res.jpg" />
           <div class="blog-preview">
             <h4 class="story-title">
@@ -311,7 +321,7 @@ font-family: 'Work Sans', sans-serif;
           <strong>But what about you?!</strong> Feel free to reach out, for
           whatever reason, by filling out the form below.
         </p>
-
+        <br />
         <form id="contact-form" action="" method="POST">
           <label for="email"> Your email:</label>
           <input
@@ -320,7 +330,7 @@ font-family: 'Work Sans', sans-serif;
             name="_replyto"
             placeholder="steve-jobs@apple.com"
           />
-
+          <br />
           <label for="name"> Your name:</label>
           <input
             type="text"
@@ -328,7 +338,7 @@ font-family: 'Work Sans', sans-serif;
             name="name"
             placeholder="Steve Jobs"
           />
-
+          <br />
           <label for="message"> Your message:</label>
           <textarea
             name="message"
@@ -346,16 +356,16 @@ font-family: 'Work Sans', sans-serif;
     <!---footer-->
 
     <footer>
-      <h6>footer</h6>
+      <h6>Josh Peachey - 2020</h6>
       <a href="https://twitter.com/peach_dev" target="_blank"
-        ><i class="fab social fa-twitter">Twitter</i></a
-      >
-      <a href="https://facebook.com" target="_blank"
-        ><i class="fab social fa-facebook-square">Facebook</i></a
-      >
-      <a href="https://instagram.com" target="_blank"
-        ><i class="fab social fa-instagram">Instagram</i></a
-      >
+        ><i class="fab social fa-twitter"></i
+      ></a>
     </footer>
+
+    <!---SCRIPTS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 2500 });
+    </script>
   </body>
 </html>
