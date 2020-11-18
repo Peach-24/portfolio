@@ -37,7 +37,7 @@ li {
 }
 
 #hero {
-  background-image: url("../media/images/wallpaper.jpg");
+  background-image: url("media/images/wallpaper.jpg");
   height: 1080px;
   max-width: 100%;
   margin: 0;
