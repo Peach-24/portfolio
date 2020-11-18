@@ -1,0 +1,185 @@
+body {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 0 2rem;
+  font-size: 20px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 5%;
+  text-transform: uppercase;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#hero {
+  background-image: url("../media/images/wallpaper.jpg");
+  margin-top: 0;
+}
+header {
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  height: 900px;
+  background-color: blanchedalmond;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 6rem;
+}
+
+/* ABOUT ME SECTION */
+
+h2 {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: "Libre Baskerville", serif, italic;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 50px;
+  left: 150px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+#about-me {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.801);
+  width: 80%;
+  margin: auto;
+  height: 1000px;
+}
+
+.about-pars {
+  width: 40%;
+  margin: 5% 0 0 5%;
+  text-align: left;
+  padding: 3rem;
+  position: relative;
+  bottom: 250px;
+  background-color: rgba(197, 108, 252, 0.5);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.hero-img {
+  width: 250px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 25%;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  box-shadow: black 5px;
+}
+
+#tech-stack {
+  width: 45%;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  bottom: 30rem;
+  background-color: rgba(191, 125, 45, 0.586);
+  border-radius: 10px;
+}
+
+#outer-box {
+  padding: 1rem 0 1rem 2.5rem;
+}
+.lang-logo {
+  height: 80px;
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+/* Portfolio */
+
+#portfolio {
+  padding: 2% 10% 2%;
+  background-color: #ead6c4;
+  height: auto;
+}
+
+.projects-table {
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.project {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.more-btn {
+  background-color: red;
+  border-radius: 10%;
+  padding: 0.5rem;
+}
+
+.project-image {
+  width: 250;
+  height: 200px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.proj-name {
+  padding: 0 2rem 0;
+  text-align: left;
+}
+.proj-desc {
+  padding: 0 2rem 0;
+  text-align: left;
+}
+
+/* Blog */
+
+#blog {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.blog-box {
+  position: absolute;
+}
+
+/* Contact Me */
+
+#contact {
+  background-color: #ead6c4;
+}
+
+/* Footer */
+
+.footer {
+  background-color: red;
+  padding: 1rem;
+}
