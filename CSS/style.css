@@ -31,7 +31,8 @@ header {
 }
 
 section {
-  height: 900px;
+  height: 1080px;
+  width: 100%;
   background-color: blanchedalmond;
 }
 
@@ -111,9 +112,8 @@ p {
   background-color: rgba(191, 125, 45, 0.586);
   border-radius: 10px;
 }
-
 #outer-box {
-  padding: 1rem 0 1rem 2.5rem;
+  padding: 1rem 0 1rem;
 }
 .lang-logo {
   height: 80px;
@@ -123,14 +123,15 @@ p {
 /* Portfolio */
 
 #portfolio {
-  padding: 2% 10% 2%;
+  padding: 1rem 0 1rem;
   background-color: #ead6c4;
   height: auto;
 }
 
 .projects-table {
-  padding: 0 2rem;
-  margin: 0;
+  padding: 0;
+  margin: auto;
+  max-width: 80%;
 }
 
 .project {
@@ -147,8 +148,8 @@ p {
 }
 
 .project-image {
-  width: 250;
-  height: 200px;
+  width: 250px;
+  height: auto;
   border-radius: 5px;
   padding: 1rem;
 }
