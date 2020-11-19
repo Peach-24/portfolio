@@ -3,14 +3,19 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
+    <!-- <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
-
-    <title>Josh Peachey | Software Developer</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" href="media/logos/favicon.ico" />
+    <title>Josh Peachey | Software Developer</title>
     <!--GOOGLE FONTS-->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Libre+Baskerville:ital@0;1&family=Work+Sans:wght@200;300;500&display=swap");
@@ -54,11 +59,27 @@ font-family: 'Work Sans', sans-serif;
 
       <div id="introduction">
         <h1 id="name">Hi, I'm Josh</h1>
-        <div id="subhead">
-          <h2><em>I'm a software developer</em></h2>
+        <div>
+          <h2 id="subhead"><em>I'm a software developer</em></h2>
+          <div id="hero-icons-box">
+            <a href="https://twitter.com/peach_dev" target="_blank"
+              ><i id="hero-icon" class="fab fa-github"></i
+            ></a>
+            <a href="https://twitter.com/peach_dev" target="_blank"
+              ><i id="hero-icon" class="fab social fa-twitter"></i
+            ></a>
+            <a href="https://twitter.com/peach_dev" target="_blank"
+              ><i id="hero-icon" class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/peach_dev" target="_blank"
+              ><i id="hero-icon" class="fa fa-envelope-o"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- ABOUT ME SECTION -->
 
     <section id="about-me">
       <h2>about me</h2>
@@ -69,43 +90,41 @@ font-family: 'Work Sans', sans-serif;
           src="media/images/josh_peachey.jpg"
           alt="software developer"
         />
+        <div id="about-container">
+          <div class="about-pars" data-aos="fade-up">
+            <h3>Hello world.</h3>
 
-        <div class="about-pars" data-aos="fade-up">
-          <h3>Hello world.</h3>
-
-          <p>
-            I’m a Manchester-based former tech reporter who has swapped writing
-            stories for writing code.
-          </p>
-          <p>
-            Inspired by interviewing digital leaders and working with the
-            Digital City Festival team, I decided to retrain as a software
-            developer and transition towards a tech career.
-          </p>
-          <p>
-            I’m passionate about harnessing new technologies to improve
-            processes, sales, and empower learning through interaction. As new
-            problems arise, for any business or body, I believe tech will be a
-            fundamental part of the right solution.
-          </p>
-          <p>
-            The same desire that drew me towards reporting - the ability to make
-            a real difference - has now taken me towards wanting to build useful
-            software and web apps. On this site, I will profile the different
-            projects I’ve worked on and share anything else of note.
-          </p>
-          <p>
-            Outside of the text editor, I’m an avid basketball fan, vinyl
-            enthusiast, and have been fortunate enough to travel all over the
-            United States and elsewhere. My most exciting journey still lies
-            ahead of me - continuous learning and development in the tech space…
-          </p>
-        </div>
-
-        <div id="tech-stack" data-aos="fade-up">
-          <div id="outer-box">
-            <h4 id="lang-and-tools"><em>Languages and tools</em></h4>
-            <div class="logo-row">
+            <p>
+              I’m a Manchester-based former tech reporter who has swapped
+              writing stories for writing code.
+            </p>
+            <p>
+              Inspired by interviewing digital leaders and working with the
+              Digital City Festival team, I decided to retrain as a software
+              developer and transition towards a tech career.
+            </p>
+            <p>
+              I’m passionate about harnessing new technologies to improve
+              processes, sales, and empower learning through interaction. As new
+              problems arise, for any business or body, I believe tech will be a
+              fundamental part of the right solution.
+            </p>
+            <p>
+              The same desire that drew me towards reporting - the ability to
+              make a real difference - has now taken me towards wanting to build
+              useful software and web apps. On this site, I will profile the
+              different projects I’ve worked on and share anything else of note.
+            </p>
+            <p>
+              Outside of the text editor, I’m an avid basketball fan, vinyl
+              enthusiast, and have been fortunate enough to travel all over the
+              United States and elsewhere. My most exciting journey still lies
+              ahead of me - continuous learning and development in the tech
+              space…
+            </p>
+          </div>
+          <div id="tech-stack">
+            <div id="outer-box">
               <img
                 class="lang-logo"
                 src="media/logos/480px-JavaScript-logo.png"
@@ -113,13 +132,11 @@ font-family: 'Work Sans', sans-serif;
               <img class="lang-logo" src="media/logos/HTML5_Logo_512.png" />
 
               <img class="lang-logo" src="media/logos/postgres-logo.png" />
-            </div>
-            <div class="logo-row">
+
               <img
                 class="lang-logo"
                 src="media/logos/CSS3_logo_and_wordmark.svg.png"
               />
-
               <img class="lang-logo" src="media/logos/react-logo.png" />
               <img
                 class="lang-logo"
@@ -133,10 +150,11 @@ font-family: 'Work Sans', sans-serif;
 
     <!---PORTFOLIO SECTION-->
 
+    <hr />
     <section id="portfolio">
-      <h2>my projects</h2>
+      <h2 id="projects-title">my projects</h2>
 
-      <div class="container" data-aos="fade-down">
+      <div class="container">
         <table>
           <tr>
             <td>
@@ -212,6 +230,7 @@ font-family: 'Work Sans', sans-serif;
       </div>
     </section>
 
+    <hr />
     <!-- BLOG -->
 
     <section id="blog">
@@ -242,6 +261,7 @@ font-family: 'Work Sans', sans-serif;
             <h4 class="story-title">
               <a
                 href="https://www.prolificnorth.co.uk/digital-city-festival/2020/02/jon-corner-cdo-city-salford-his-smart-city-ambitions-and-role-citizens"
+                target="_blank"
                 >Salford City Region's CEO on what digital citizenship and his
                 smart-city ambitions</a
               >
@@ -260,6 +280,7 @@ font-family: 'Work Sans', sans-serif;
             <h4 class="story-title">
               <a
                 href="https://www.prolificnorth.co.uk/news/advertising-news/2019/12/social-chains-katy-leeson-company-culture-and-staying-ahead-todays"
+                target="_blank"
                 >Social Chain's Managing Director on staying ahead in today’s
                 ever-changing social media landscape</a
               >
@@ -279,6 +300,7 @@ font-family: 'Work Sans', sans-serif;
             <h4 class="story-title">
               <a
                 href="https://www.prolificnorth.co.uk/features/2019/11/pwcs-scale-programme-lead-aine-mctiernan-scaling-founders-mentality-and-startup"
+                target="_blank"
                 >PWC's Scale Programme lead on a founder's mentality and the
                 startup ecosystem in the North</a
               >
@@ -298,6 +320,7 @@ font-family: 'Work Sans', sans-serif;
             <h4 class="story-title">
               <a
                 href="https://www.prolificnorth.co.uk/digital-city-festival/2019/09/stuart-clarke-leeds-digital-cross-city-collaboration-lets-talk-about"
+                target="_blank"
                 >Leeds Digital Festival Director on cross-city collaboration and
                 improved connectivity</a
               >
@@ -305,7 +328,9 @@ font-family: 'Work Sans', sans-serif;
             <p class="story-desc">
               Northern Cities are growing in confidence and what we need now is
               a concerted effort to collaborate effectively, says Stuart Clarke,
-              Director of Leeds Digital.
+              Director of Leeds Digital. He talks about the beauty of community
+              events, and why ‘Northern exiles’ living in London should consider
+              moving back.
             </p>
           </div>
         </div>
@@ -313,6 +338,8 @@ font-family: 'Work Sans', sans-serif;
     </section>
 
     <!---CONTACT ME--->
+
+    <hr />
 
     <section id="contact">
       <h2>get in touch</h2>
@@ -322,7 +349,7 @@ font-family: 'Work Sans', sans-serif;
           whatever reason, by filling out the form below.
         </p>
         <br />
-        <form id="contact-form" action="" method="POST">
+        <form id="contact-form" action="" method="POST" data-aos="fade-up">
           <label for="email"> Your email:</label>
           <input
             type="text"
@@ -357,9 +384,6 @@ font-family: 'Work Sans', sans-serif;
 
     <footer>
       <h6>Josh Peachey - 2020</h6>
-      <a href="https://twitter.com/peach_dev" target="_blank"
-        ><i class="fab social fa-twitter"></i
-      ></a>
     </footer>
 
     <!---SCRIPTS-->

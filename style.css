@@ -14,7 +14,14 @@ p {
 }
 
 a:hover {
-  color: orangered;
+  color: rgb(0, 255, 255);
+}
+
+hr {
+  width: 5%;
+  border: dotted #5adcdcbd 9px;
+  border-bottom: none;
+  margin: 50px auto;
 }
 
 /*****************************************/
@@ -23,6 +30,7 @@ a:hover {
 
 a {
   text-decoration: none;
+  color: #22a7a7f3;
 }
 
 ul {
@@ -30,18 +38,21 @@ ul {
 }
 
 li {
-  display: inline;
-  padding: 0 2rem;
   font-size: 20px;
+  border-radius: 5px;
+  text-align: left;
 }
 
 .nav-list {
   margin: 0;
   font-family: "Libre Baskerville", serif;
+  width: auto;
+  position: fixed;
+  left: 25px;
 }
 
 #hero {
-  background-image: url("media/images/wallpaper.jpg");
+  background-color: black;
   height: 1080px;
   max-width: 100%;
   margin: 0;
@@ -51,30 +62,35 @@ li {
 #introduction {
   text-align: center;
   /* background: pink; */
-  padding: 3rem;
+  padding: 1rem;
   width: 40%;
   margin: auto;
   margin-top: 15%;
 }
 
 .container {
-  background-color: ;
+  /* background-color: pink; */
   text-align: center;
-  width: 80%;
-  height: auto;
+  /* height: auto; */
   margin: auto;
-}
-
-section {
-  width: 100%;
-  margin: auto;
-  padding: 0;
-  background-color: blanchedalmond;
 }
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 6rem;
+  color: whitesmoke;
+}
+
+#subhead {
+  color: #5adcdcbd;
+}
+#hero-icon {
+  font-size: 3rem;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+#hero-icon:hover {
+  color: cyan;
 }
 
 /*****************************************/
@@ -116,23 +132,22 @@ p {
 }
 
 #about-cont {
-  height: 800px;
-  /* background-color: #5c5a5841; */
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 100px;
-  margin-bottom: 100px;
+  background-color: #5c5a5841;
+}
+#about-container {
+  background: red;
+  display: flex;
+  height: auto;
 }
 
 .about-pars {
-  width: 40%;
+  width: 60%;
   margin: 5% 0 0 5%;
   text-align: left;
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   bottom: 250px;
-  background-color: rgba(197, 108, 252, 0.5);
-  border-radius: 10px;
+  background-color: rgba(71, 220, 246, 0.75);
   z-index: 2;
 }
 
@@ -140,28 +155,20 @@ p {
   width: 250px;
   border-radius: 50%;
   position: relative;
-  top: 100px;
-  left: 25%;
+  top: 60px;
+  left: 350px;
   z-index: 5;
-  padding: 0;
-  margin: 0;
-  box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: 3px 3px 7px #48d4ca;
+  justify-self: flex-end;
 }
 
 #tech-stack {
-  width: 45%;
-  height: 300px;
-  position: relative;
-  left: 50%;
-  bottom: 600px;
-  background-color: rgba(208, 135, 46, 0.357);
-  border-radius: 10px;
-  padding: 0;
-  margin: 0;
+  height: auto;
+  width: 30%;
+  margin: 5rem 2rem;
+  background-color: white;
 }
-#outer-box {
-  padding: 1rem 0 1rem;
-}
+
 .lang-logo {
   height: 80px;
   padding: 1rem 0;
@@ -172,20 +179,36 @@ p {
 /*****************************************/
 /* Portfolio */
 
-#portfolio {
-  background-color: #ead6c4;
-  height: auto;
+#projects-title {
+  color: white;
 }
+
+#portfolio {
+  background-color: black;
+  height: auto;
+  padding-bottom: 100px;
+}
+td {
+  width: 50%;
+}
+
+/* min-width: 100%;
+  min-height: 100%; */
 
 .project {
   background-color: white;
   margin: 1.5rem;
-  border-radius: 10px;
   padding: 1rem;
+  max-width: 100%;
+  height: 450px;
+}
+
+.project:hover {
+  box-shadow: 2px 2px 5px #e2acac;
 }
 
 .project-image {
-  width: 350px;
+  max-width: 350px;
   height: auto;
   border-radius: 5px;
 }
@@ -199,7 +222,7 @@ p {
   margin: 1rem 2rem;
   padding: 0;
   text-align: left;
-  width: 70%;
+  width: 90%;
   font-size: 16px;
 }
 
@@ -210,11 +233,11 @@ p {
 #blog {
   background-color: rgba(255, 255, 255, 0.801);
   height: auto;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 #written-intro {
-  width: 95%;
+  width: 100%;
   margin: auto;
   text-align: left;
   font-size: 20px;
@@ -222,32 +245,42 @@ p {
 }
 
 .story-card {
-  background-color: rgba(245, 237, 229, 0.96);
-  width: 75%;
-  margin: 1rem auto 1rem;
+  background-color: rgba(32, 29, 25, 0.96);
+  width: 80%;
+  margin: 1rem auto;
   border-radius: 10px;
   display: flex;
   box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.blog-preview {
+  padding: 1rem;
+  width: 90%;
 }
 
 .story-title {
   text-align: left;
   font-family: "Libre Baskerville", serif, italic;
   font-size: 19px;
-  padding: 2rem 1rem 0 1rem;
+  padding: 0rem 0;
 }
 
 .story-img {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
-  padding: 1rem;
+  box-shadow: 1px 1px 3px #aaaaaa;
+  /* padding: 1rem; */
+  margin: 1rem;
 }
 
 .story-desc {
   font-size: 16px;
   text-align: left;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin: 0;
+  padding: 0;
+  color: whitesmoke;
 }
 
 /*****************************************/
@@ -255,7 +288,7 @@ p {
 /* Contact Me */
 
 #contact {
-  background-color: #ead6c4;
+  background-color: white;
   height: auto;
   padding-bottom: 100px;
 }
@@ -264,7 +297,7 @@ label {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 form {
   box-sizing: border-box;
@@ -272,7 +305,6 @@ form {
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  /* background-color: rgba(145, 49, 49, 0.693); */
 }
 
 input {
@@ -289,7 +321,8 @@ textarea {
   height: 40px;
   width: 100%;
   margin: 50px 0;
-  background-color: rgba(220, 20, 60, 0.576);
+  background-color: rgba(0, 255, 255, 0.734);
+  /* background-color: rgb(41, 236, 236); */
   border-radius: 5px;
 }
 
@@ -301,7 +334,7 @@ textarea {
   height: 40px;
   width: 100%;
   margin: 50px 0;
-  background-color: rgb(233, 28, 69);
+  background-color: rgb(26, 145, 145);
   border-radius: 5px;
 }
 
@@ -314,8 +347,8 @@ h6 {
 }
 
 footer {
-  height: 50px;
-  background-color: #fff;
+  height: auto;
+  background-color: rgb(26, 145, 145);
   padding: 1rem;
 }
 
