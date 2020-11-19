@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,6 +36,7 @@ a {
 
 ul {
   list-style-type: none;
+  display: none;
 }
 
 li {
@@ -52,8 +54,8 @@ li {
 }
 
 #hero {
-  background-color: black;
-  height: 1080px;
+  background-color: rgba(0, 0, 0, 0.89);
+  height: auto;
   max-width: 100%;
   margin: 0;
   padding: 2rem 0 0 0;
@@ -61,28 +63,32 @@ li {
 
 #introduction {
   text-align: center;
-  /* background: pink; */
-  padding: 1rem;
-  width: 40%;
+  width: 70%;
   margin: auto;
   margin-top: 15%;
+  padding-bottom: 15%;
 }
 
 .container {
   /* background-color: pink; */
-  text-align: center;
-  /* height: auto; */
-  margin: auto;
+  /* text-align: center; */
 }
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 6rem;
   color: whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+#subhead {
+  color: #d1d1d1bd;
+  text-align: left;
 }
 
-#subhead {
-  color: #5adcdcbd;
+#hero-icons-box {
+  width: 100%;
+  padding-top: 50px;
 }
 #hero-icon {
   font-size: 3rem;
@@ -92,7 +98,29 @@ h1 {
 #hero-icon:hover {
   color: cyan;
 }
+#hero-block {
+  display: flex;
+  box-sizing: content-box;
+  margin: auto;
+  width: 70%;
+  /* text-align: center; */
+}
 
+#main-img {
+  max-width: 100%;
+  margin: 0px;
+  padding: 2.5rem;
+}
+#hero-right {
+  text-align: left;
+  border-left: 5px solid rgba(37, 223, 177, 0.582);
+  padding: 30px 0 10px 50px;
+  width: 50%;
+}
+#hero-left {
+  width: 50%;
+  text-align: center;
+}
 /*****************************************/
 /*****************************************/
 /* ABOUT ME SECTION */
@@ -128,14 +156,13 @@ p {
 
 #about-me {
   background-color: rgba(255, 255, 255, 0.801);
-  height: auto;
 }
 
 #about-cont {
-  background-color: #5c5a5841;
+  /* background-color: #5c5a5841; */
+  height: 900px;
 }
 #about-container {
-  background: red;
   display: flex;
   height: auto;
 }
@@ -159,14 +186,23 @@ p {
   left: 350px;
   z-index: 5;
   box-shadow: 3px 3px 7px #48d4ca;
-  justify-self: flex-end;
+}
+#outer-box {
+  padding: 80px 0 0 0;
+  max-height: 500px;
+  /* background-color: teal; */
 }
 
+#languages {
+  padding: 0 0 50px 0;
+  margin: 0;
+}
 #tech-stack {
-  height: auto;
-  width: 30%;
+  height: 400px;
+  max-width: 30%;
   margin: 5rem 2rem;
-  background-color: white;
+  background-color: rgba(191, 238, 252, 0.603);
+  padding: 10px;
 }
 
 .lang-logo {
@@ -184,7 +220,7 @@ p {
 }
 
 #portfolio {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.89);
   height: auto;
   padding-bottom: 100px;
 }
@@ -201,10 +237,10 @@ td {
   padding: 1rem;
   max-width: 100%;
   height: 450px;
+  border: 7px solid rgba(65, 148, 142, 0.24);
 }
 
 .project:hover {
-  box-shadow: 2px 2px 5px #e2acac;
 }
 
 .project-image {
@@ -245,7 +281,7 @@ td {
 }
 
 .story-card {
-  background-color: rgba(32, 29, 25, 0.96);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 80%;
   margin: 1rem auto;
   border-radius: 10px;
@@ -350,6 +386,7 @@ footer {
   height: auto;
   background-color: rgb(26, 145, 145);
   padding: 1rem;
+  color: whitesmoke;
 }
 
 .fab {
