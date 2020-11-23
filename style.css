@@ -9,6 +9,10 @@ body {
   padding: 0;
   text-align: center;
 }
+section {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 p {
   padding: 1rem 0.5rem;
@@ -47,7 +51,7 @@ li {
 
 .nav-list {
   margin: 0;
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   width: auto;
   position: fixed;
   left: 25px;
@@ -55,27 +59,25 @@ li {
 
 #hero {
   background-color: rgba(0, 0, 0, 0.89);
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
   margin: 0;
-  padding: 2rem 0 0 0;
+  padding: 10% 0 20% 0;
 }
 
 #introduction {
   text-align: center;
   width: 70%;
+  height: 100%;
   margin: auto;
-  margin-top: 15%;
-  padding-bottom: 15%;
 }
 
-.container {
-  /* background-color: pink; */
-  /* text-align: center; */
-}
+/* .container {
+  background-color: pink;
+} */
 
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 6rem;
   color: whitesmoke;
   padding: 0;
@@ -96,24 +98,23 @@ h1 {
   padding: 0.5rem 1rem;
 }
 #hero-icon:hover {
-  color: cyan;
+  color: #5adcdcbd;
 }
 #hero-block {
   display: flex;
-  box-sizing: content-box;
+
   margin: auto;
-  width: 70%;
+  width: 80%;
   /* text-align: center; */
 }
 
 #main-img {
   max-width: 100%;
   margin: 0px;
-  padding: 2.5rem;
 }
 #hero-right {
   text-align: left;
-  border-left: 5px solid rgba(37, 223, 177, 0.582);
+  border-left: 5px solid #5adcdcbd;
   padding: 30px 0 10px 50px;
   width: 50%;
 }
@@ -129,18 +130,18 @@ h2 {
   text-align: center;
   padding: 2rem 0rem;
   margin: 0;
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 35px;
 }
 
 h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 25px;
   padding: 1rem;
 }
 
 #lang-and-tools {
-  font-family: "Libre Baskerville", serif, italic;
+  font-family: 'Libre Baskerville', serif, italic;
   font-size: 20px;
   position: relative;
   bottom: 40px;
@@ -149,7 +150,7 @@ h3 {
 }
 
 p {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
@@ -240,8 +241,8 @@ td {
   border: 7px solid rgba(65, 148, 142, 0.24);
 }
 
-.project:hover {
-}
+/* .project:hover {
+} */
 
 .project-image {
   max-width: 350px;
@@ -296,7 +297,7 @@ td {
 
 .story-title {
   text-align: left;
-  font-family: "Libre Baskerville", serif, italic;
+  font-family: 'Libre Baskerville', serif, italic;
   font-size: 19px;
   padding: 0rem 0;
 }
@@ -330,7 +331,7 @@ td {
 }
 
 label {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   font-size: 18px;
   padding: 0.5rem;
@@ -397,11 +398,11 @@ footer {
 /*****************************************/
 /* Animations */
 
-[aos="fade"] {
+[aos='fade'] {
   opacity: 0;
   transition-property: opacity;
 }
 
-[aos="fade"].aos-animate {
+[aos='fade'].aos-animate {
   opacity: 1;
 }
