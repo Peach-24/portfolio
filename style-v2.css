@@ -1,0 +1,96 @@
+* {
+  max-width: 100%;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #22a7a7f3;
+}
+
+.about-pars {
+  background-color: #22a7a76b;
+  padding: 1rem;
+}
+
+.story-card {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+.story-desc {
+  color: white;
+}
+.story-img {
+  border-radius: 50%;
+}
+/* SECTION COLORS */
+#hero {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+#about-me {
+}
+
+#portfolio {
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+}
+
+#blog {
+}
+
+#contact {
+}
+
+footer {
+  background-color: #22a7a7f3;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: whitesmoke;
+}
+h2 {
+  font-family: monospace;
+  color: #d1d1d1bd;
+}
+
+/* BASE */
+@media (min-width: 0px) {
+  #hero {
+    padding: 45% 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    width: 100px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .lang-logo {
+    width: 50px;
+  }
+}
+/* iPhone 5/SE */
+@media (min-width: 320px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone Plus  */
+@media (min-width: 400px) {
+}
+
+/* iPad tablet */
+@media (min-width: 700px) {
+}
