@@ -13,7 +13,7 @@ a {
 }
 
 .story-card {
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: rgba(0, 0, 0, 0.822);
 }
 
 .story-desc {
@@ -22,11 +22,15 @@ a {
 .story-img {
   border-radius: 50%;
 }
+hr {
+  width: 15%;
+  border: dotted #5adcdcbd 9px;
+  border-bottom: none;
+  margin: 50px auto;
+}
 /* SECTION COLORS */
 #hero {
   background-color: rgba(0, 0, 0, 0.89);
-}
-#about-me {
 }
 
 #portfolio {
@@ -34,14 +38,12 @@ a {
   color: white;
 }
 
-#blog {
-}
-
-#contact {
-}
-
 footer {
   background-color: #22a7a7f3;
+  color: white;
+  font-size: 8px;
+  padding: 5px;
+  margin-top: 100px;
 }
 
 h1 {
@@ -64,16 +66,94 @@ h2 {
   h2 {
     font-size: 1.5rem;
   }
+  h3 {
+    padding: 1.5rem 1rem 1.5rem;
+  }
   img {
     width: 100px;
+  }
+  #main-img {
+    width: 150px;
   }
   p {
     font-size: 10px;
   }
+  .fab {
+    padding: 1rem;
+    font-size: 25px;
+  }
   .lang-logo {
     width: 50px;
   }
+  button {
+    min-width: 60%;
+    margin: 2rem;
+  }
+  #about-body {
+    text-align: left;
+  }
+  #technologies {
+    text-align: left;
+    font-size: 15px;
+    margin: 0 0 1rem;
+  }
+
+  #outer-box {
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 5px #22a7a7f3;
+  }
+  #outer-box img {
+    max-width: 40px;
+    margin: 0 1rem 0.5rem;
+  }
+
+  /************ PROJECTS ***********/
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+
+  .project-image {
+    min-width: 85%;
+    margin: 1rem;
+  }
+  .proj-desc {
+    max-width: 90%;
+    margin: 0 auto 2rem;
+    font-size: 14px;
+  }
+  /************ BLOG ***********/
+
+  .story-card {
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 5px grey;
+  }
+
+  /************ form ***********/
+  #form-text {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+  form {
+    max-width: 80%;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  }
+  textarea {
+    width: 100%;
+  }
 }
+
 /* iPhone 5/SE */
 @media (min-width: 320px) {
   h1 {
@@ -82,15 +162,63 @@ h2 {
   h2 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 12px;
   }
+  .story-img {
+    padding: 5px;
+    margin: 1rem;
+  }
+  #technologies {
+    text-align: left;
+    font-size: 15px;
+    margin: 0 0 1rem;
+  }
+  #outer-box {
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 5px #22a7a7f3;
+  }
+  #outer-box img {
+    max-width: 40px;
+    margin: 0 1rem 0.5rem;
+  }
+
+  /************ PROJECTS ***********/
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+
+    padding: 10px;
+  }
+  .project-image {
+    min-width: 90%;
+    margin: 1rem;
+  }
+
+  /************ BLOG ***********/
 }
 
 /* iPhone Plus  */
 @media (min-width: 400px) {
+  #hero {
+    padding: 30% 0;
+  }
 }
 
 /* iPad tablet */
 @media (min-width: 700px) {
+  #hero {
+    padding: 15% 0;
+  }
+
+  /************ PROJECTS ***********/
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  /************ BLOG ***********/
 }

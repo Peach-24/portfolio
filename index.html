@@ -51,24 +51,23 @@ font-family: 'Work Sans', sans-serif;
           </div>
         </div>
         <div id="hero-icons-box">
-          <a href="https://twitter.com/peach_dev" target="_blank"
+          <a href="https://github.com/Peach-24" target="_blank"
             ><i id="hero-icon" class="fab fa-github"></i
           ></a>
           <a href="https://twitter.com/peach_dev" target="_blank"
             ><i id="hero-icon" class="fab social fa-twitter"></i
           ></a>
-          <a href="https://twitter.com/peach_dev" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/josh-peachey-profile/"
+            target="_blank"
             ><i id="hero-icon" class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://twitter.com/peach_dev" target="_blank"
-            ><i id="hero-icon" class="fa fa-envelope-o"></i
           ></a>
         </div>
       </div>
     </section>
 
     <!-- ABOUT ME SECTION -->
-    <hr />
+
     <section id="about-me">
       <h3>about me</h3>
 
@@ -81,29 +80,28 @@ font-family: 'Work Sans', sans-serif;
         <div id="about-container">
           <div class="about-pars" data-aos="fade-up" data-aos-delay="500">
             <h3>Hello world.</h3>
-
-            <p>
+            <p id="about-body">
               I’m a Manchester-based former tech reporter who has swapped
               writing stories for writing code.
             </p>
-            <p>
+            <p id="about-body">
               Inspired by interviewing digital leaders and working as part of
               the Digital City Festival team, I decided to retrain as a software
               developer and transition towards a tech career.
             </p>
-            <p>
+            <p id="about-body">
               I’m passionate about harnessing new technologies to improve
               processes, sales, and empower learning through interaction. As new
               problems arise, for any business or body, I believe tech will be a
               fundamental part of the right solution.
             </p>
-            <p>
+            <p id="about-body">
               The same desire that drew me towards reporting - the ability to
               make a real difference - has now taken me towards wanting to build
               useful software and web apps. On this site, I will profile the
               different projects I’ve worked on and share anything else of note.
             </p>
-            <p>
+            <p id="about-body">
               Outside of the text editor, I’m an avid basketball fan, vinyl
               enthusiast, and have been fortunate enough to travel all over the
               United States and elsewhere. My most exciting journey still lies
@@ -139,87 +137,75 @@ font-family: 'Work Sans', sans-serif;
 
     <!---PORTFOLIO SECTION-->
 
-    <hr />
     <section id="portfolio">
       <h3 id="projects-title">my projects</h3>
 
-      <div class="container">
-        <table>
-          <tr>
-            <td>
-              <div class="project">
-                <img
-                  class="project-image"
-                  src="media/images/API-thumbnail.png"
-                />
-                <a
-                  class="portfolio-link"
-                  href="https://nc-news-api-jp.herokuapp.com/api"
-                >
-                  <h4 class="proj-name">Built an API</h4></a
-                >
+      <div class="grid-container">
+        <div class="project-1">
+          <img
+            class="project-image"
+            src="./media/images/portfoli-NBA-GM-sim.png"
+          />
+          <a
+            class="portfolio-link"
+            href="https://github.com/Peach-24/react-app"
+          >
+            <h4 class="proj-name">NBA GM Simulator</h4></a
+          >
+          <p class="proj-desc">
+            A shared passion for the NBA led myself and one other Northcoders
+            student to create a working NBA General Manager game which requires
+            the user to sign a certain number of players to a roster without
+            breaching the salary cap. Built using React, every in-game decision
+            automatically updates the user's financial statistics. Many more
+            improvements planned.
+          </p>
+        </div>
 
-                <p class="proj-desc">
-                  As part of my back-end module on the Northcoders bootcamp, I
-                  used a combination of Express.js, Knex.js, test-driven
-                  development, to create an API that demonstrates my
-                  understanding of HTTP requests and how servers work.
-                </p>
-              </div>
-            </td>
+        <div class="project-2">
+          <img class="project-image" src="media/images/pokemon-img.jpg" />
+          <a
+            class="portfolio-link"
+            href="https://github.com/Peach-24/pokemon-battle-game"
+            ><h4 class="proj-name">CLI - Pokemon Battle Game</h4></a
+          >
+          <p class="proj-desc">
+            Focusing on Object-Oriented Programming, I recreated the beginning
+            of one of my childhood's most epic adventures. This homage to the
+            first Pokemon Games can be run through the command line
+            (Inquirer.js) and allows the user to personalise their game
+            experience in various ways.
+          </p>
+        </div>
 
-            <td>
-              <div class="project">
-                <img class="project-image" src="media/images/pokemon-img.jpg" />
-                <h4 class="proj-name">CLI - Pokemon Battle Game</h4>
+        <div class="project-3">
+          <img class="project-image" src="media/images/API-thumbnail.png" />
+          <a
+            class="portfolio-link"
+            href="https://nc-news-api-jp.herokuapp.com/api"
+            ><h4 class="proj-name">Project Name</h4></a
+          >
 
-                <p class="proj-desc">
-                  Focusing on Object-Oriented Programming, this pair-programmed
-                  creation can be run through the command line (Inquirer.js) and
-                  is a fun homage to a generation's favourite game - Pokémon!
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="project">
-                <img
-                  class="project-image"
-                  src="media/images/API-thumbnail.png"
-                />
-                <h4 class="proj-name">Project Name</h4>
+          <p class="proj-desc">
+            Anim aliquet voluptate luctus vel euismod, mus nulla orci donec
+            minima luctus, accusamus turpis deleniti architecto, montes egestas,
+            temporibus non odio dicta, enim luctus nostrud.
+          </p>
+        </div>
 
-                <p class="proj-desc">
-                  Anim aliquet voluptate luctus vel euismod, mus nulla orci
-                  donec minima luctus, accusamus turpis deleniti architecto,
-                  montes egestas, temporibus non odio dicta, enim luctus
-                  nostrud.
-                </p>
-              </div>
-            </td>
-            <td>
-              <div class="project">
-                <img
-                  class="project-image"
-                  src="media/images/API-thumbnail.png"
-                />
-                <h4 class="proj-name">Project name</h4>
+        <div class="project-4">
+          <img class="project-image" src="media/images/API-thumbnail.png" />
+          <h4 class="proj-name">Project name</h4>
 
-                <p class="proj-desc">
-                  Anim aliquet voluptate luctus vel euismod, mus nulla orci
-                  donec minima luctus, accusamus turpis deleniti architecto,
-                  montes egestas, temporibus non odio dicta, enim luctus
-                  nostrud.
-                </p>
-              </div>
-            </td>
-          </tr>
-        </table>
+          <p class="proj-desc">
+            Anim aliquet voluptate luctus vel euismod, mus nulla orci donec
+            minima luctus, accusamus turpis deleniti architecto, montes egestas,
+            temporibus non odio dicta, enim luctus nostrud.
+          </p>
+        </div>
       </div>
     </section>
 
-    <hr />
     <!-- BLOG -->
 
     <section id="blog">
@@ -297,9 +283,8 @@ font-family: 'Work Sans', sans-serif;
             <p class="story-desc">
               Growing a company can be tricky business. Áine McTiernan, who
               heads up PwC’s Scale programmes in the North of England, talks
-              about her love for fast-moving startup culture, working with (or
-              for) founders, and the right conditions needed for startups to
-              thrive…
+              about her love for fast-moving startup culture, working with
+              founders, and the right conditions needed for startups to thrive…
             </p>
           </div>
         </div>
@@ -315,7 +300,7 @@ font-family: 'Work Sans', sans-serif;
               >
             </h5>
             <p class="story-desc">
-              Northern Cities are growing in confidence and what we need now is
+              Northern cities are growing in confidence and what we need now is
               a concerted effort to collaborate effectively, says Stuart Clarke,
               Director of Leeds Digital. He talks about the beauty of community
               events, and why ‘Northern exiles’ living in London should consider
@@ -332,47 +317,41 @@ font-family: 'Work Sans', sans-serif;
 
     <section id="contact">
       <h3>get in touch</h3>
-      <div class="container">
-        <p>
-          <strong>But what about you?!</strong> Feel free to reach out, for
-          whatever reason, by filling out the form below.
-        </p>
+
+      <p id="form-text">
+        <strong>But what about you?</strong> Feel free to reach out, for
+        whatever reason, by filling out the form below.
+      </p>
+      <br />
+      <form id="contact-form" action="" method="POST">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="_replyto"
+          placeholder="steve-jobs@apple.com"
+        />
         <br />
-        <form id="contact-form" action="" method="POST">
-          <label for="email"> Your email:</label>
-          <input
-            type="text"
-            id="email"
-            name="_replyto"
-            placeholder="steve-jobs@apple.com"
-          />
-          <br />
-          <label for="name"> Your name:</label>
-          <input
-            type="text"
-            id="yourname"
-            name="name"
-            placeholder="Steve Jobs"
-          />
-          <br />
-          <label for="message"> Your message:</label>
-          <textarea
-            name="message"
-            id="message"
-            rows="8"
-            placeholder="Hi Josh..."
-          ></textarea>
-          <button id="contact-button" type="submit">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
+        <label for="name">Name:</label>
+        <input type="text" id="yourname" name="name" placeholder="Steve Jobs" />
+        <br />
+        <label for="message"> Your message:</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="8"
+          placeholder="Hi Josh..."
+        ></textarea>
+        <button id="contact-button" type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
     </section>
 
     <!---footer-->
 
     <footer>
-      <h6>Josh Peachey - 2020</h6>
+      <p>Josh Peachey - 2020</p>
     </footer>
 
     <!---SCRIPTS-->
