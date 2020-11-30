@@ -9,7 +9,9 @@ a {
 
 .about-pars {
   background-color: #22a7a76b;
-  padding: 1rem;
+  background-color: #22a7a76b;
+  padding: 0 1rem;
+  margin: 0 1rem 1rem;
 }
 
 .story-card {
@@ -67,8 +69,9 @@ h2 {
     font-size: 1.5rem;
   }
   h3 {
-    padding: 2rem 1rem;
-    margin: 2rem 0 0;
+    padding: 1rem;
+    /* max-width: 70%; */
+    margin: 2rem auto 0;
   }
   img {
     width: 100px;
@@ -117,7 +120,7 @@ h2 {
     padding: 10px;
   }
 
-  .project-image {
+  #project-image {
     min-width: 85%;
     margin: 1rem;
   }
@@ -166,6 +169,11 @@ h2 {
 
   p {
     font-size: 12px;
+  }
+  .about-pars {
+    background-color: #22a7a76b;
+    padding: 0 1rem 1rem;
+    margin: 0 1rem 1rem;
   }
   .story-img {
     padding: 5px;
@@ -225,8 +233,8 @@ h2 {
   }
   .about-pars {
     background-color: #22a7a76b;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0 1rem 1rem;
+    margin: 0 1rem 1rem;
   }
 }
 
