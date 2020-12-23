@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
 * {
   max-width: 100%;
   text-align: center;
@@ -51,12 +53,45 @@ footer {
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
+  padding-bottom: 3vh;
 }
-h2 {
-  font-family: monospace;
+#subhead {
+  font-family: 'Anonymous Pro', monospace;
   color: #d1d1d1bd;
 }
+.line {
+  width: 10em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
 
+/*  Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 /* BASE */
 @media (min-width: 0px) {
   #hero {
@@ -387,7 +422,7 @@ h2 {
   #smiley-me {
     width: 200px;
     height: 200px;
-    margin: 0;
+    margin: 35px 0 0;
     z-index: 5;
   }
   p {

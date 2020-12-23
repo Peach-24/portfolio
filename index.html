@@ -47,7 +47,8 @@ font-family: 'Work Sans', sans-serif;
           </div>
           <div id="hero-right">
             <h1 id="name">Josh Peachey</h1>
-            <h2 id="subhead"><em>Software Developer</em></h2>
+            <!-- <h2 id="subhead"><em>Software Developer</em></h2> -->
+            <p id="subhead" class="line anim-typewriter">Software Developer</p>
           </div>
         </div>
         <div id="hero-icons-box">
@@ -69,8 +70,6 @@ font-family: 'Work Sans', sans-serif;
     <!-- ABOUT ME SECTION -->
 
     <section id="about-me">
-      <h3>about me</h3>
-
       <div class="container" id="about-cont">
         <img
           class="story-img"
@@ -138,7 +137,7 @@ font-family: 'Work Sans', sans-serif;
     <!---PORTFOLIO SECTION-->
 
     <section id="portfolio">
-      <h3 id="projects-title">my projects</h3>
+      <h3 id="projects-title" data-aos="zoom">my projects</h3>
 
       <div class="grid-container">
         <div class="project-1">
@@ -161,8 +160,29 @@ font-family: 'Work Sans', sans-serif;
             improvements planned.
           </p>
         </div>
-
         <div class="project-2">
+          <img
+            id="project-image"
+            src="media/images/Northcoders-news-project-thumb.png"
+          />
+          <a class="portfolio-link" href=""
+            ><h4 class="proj-name">Northcoders News platform</h4></a
+          >
+
+          <p class="proj-desc">
+            After building a fully functioning API for a fictional Northcoders
+            News website, I got to work on creating a React-based frontend to
+            interact with it. For the
+            <a href="https://nc-news-api-jp.herokuapp.com/api"
+              >nc-news-backend</a
+            >, I used packages such as Express, Axios and Knex to assist with
+            HTTP requests, and demonstrated an appreciation for the MVC model.
+            The frontend is responsive and has user experience at the central
+            focus.
+          </p>
+        </div>
+
+        <div class="project-3">
           <img id="project-image" src="media/images/pokemon-img.jpg" />
           <a
             class="portfolio-link"
@@ -178,29 +198,16 @@ font-family: 'Work Sans', sans-serif;
           </p>
         </div>
 
-        <div class="project-3">
-          <img id="project-image" src="media/images/API-thumbnail.png" />
-          <a
-            class="portfolio-link"
-            href="https://nc-news-api-jp.herokuapp.com/api"
-            ><h4 class="proj-name">Project Name</h4></a
-          >
-
-          <p class="proj-desc">
-            Anim aliquet voluptate luctus vel euismod, mus nulla orci donec
-            minima luctus, accusamus turpis deleniti architecto, montes egestas,
-            temporibus non odio dicta, enim luctus nostrud.
-          </p>
-        </div>
-
         <div class="project-4">
           <img id="project-image" src="media/images/API-thumbnail.png" />
-          <h4 class="proj-name">Project name</h4>
+          <h4 class="proj-name">Zeal - Mobile App for Creative Clubs</h4>
 
           <p class="proj-desc">
-            Anim aliquet voluptate luctus vel euismod, mus nulla orci donec
-            minima luctus, accusamus turpis deleniti architecto, montes egestas,
-            temporibus non odio dicta, enim luctus nostrud.
+            For a final group project on my coding bootcamp, three others and I
+            collaborated on a mobile app that allows friends to form digital
+            activity clubs where they can share and discuss their work. It's an
+            online, pandemic-proof, version of a book, music, or photography
+            club.
           </p>
         </div>
       </div>
@@ -209,7 +216,7 @@ font-family: 'Work Sans', sans-serif;
     <!-- BLOG -->
 
     <section id="blog">
-      <h3>written work</h3>
+      <h3 data-aos="zoom">written work</h3>
       <div class="container" id="blog-posts-cont">
         <div id="written-intro">
           <p>
@@ -316,7 +323,7 @@ font-family: 'Work Sans', sans-serif;
     <hr />
 
     <section id="contact">
-      <h3>get in touch</h3>
+      <h3 data-aos="zoom">get in touch</h3>
 
       <p id="form-text">
         <strong>But what about you?</strong> Feel free to reach out, for
