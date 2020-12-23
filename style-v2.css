@@ -94,8 +94,14 @@ h1 {
 }
 /* BASE */
 @media (min-width: 0px) {
+  #introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   #hero {
-    padding: 45% 0;
+    height: 100vh;
   }
   h1 {
     font-size: 2rem;
@@ -234,7 +240,6 @@ h1 {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
-
     padding: 10px;
   }
   .project-image {
@@ -245,9 +250,9 @@ h1 {
 
 /* iPhone Plus  */
 @media (min-width: 400px) {
-  #hero {
+  /* #hero {
     padding: 40% 0 50%;
-  }
+  } */
 
   .story-card {
     padding: 1rem;
@@ -275,9 +280,9 @@ h1 {
 
 /* iPad tablet */
 @media (min-width: 700px) {
-  #hero {
+  /* #hero {
     padding: 40% 0;
-  }
+  } */
   h1 {
     font-family: 'Josefin Sans', sans-serif;
     color: whitesmoke;
@@ -386,9 +391,9 @@ h1 {
 }
 
 @media (min-width: 1000px) {
-  #hero {
+  /* #hero {
     padding: 8% 0;
-  }
+  } */
   h1 {
     font-size: 6rem;
   }
