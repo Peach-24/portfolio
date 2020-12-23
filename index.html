@@ -13,7 +13,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style-v2.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="icon" href="media/logos/favicon.ico" />
     <title>Josh Peachey | Software Developer</title>
     <!--GOOGLE FONTS-->
@@ -29,12 +29,6 @@
 
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!--
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Work Sans', sans-serif;
--->
   </head>
 
   <body>
@@ -333,38 +327,55 @@ font-family: 'Work Sans', sans-serif;
         whatever reason, by filling out the form below.
       </p>
       <br />
-      <form id="contact-form" action="" method="POST">
-        <label for="email">Email:</label>
-        <input
-          type="text"
-          id="email"
-          name="_replyto"
-          placeholder="steve-jobs@apple.com"
-        />
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xbjppokp"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="_replyto"
+            placeholder="steve-jobs@apple.com"
+          />
+        </div>
         <br />
-        <label for="name">Name:</label>
-        <input type="text" id="yourname" name="name" placeholder="Steve Jobs" />
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="yourname"
+            name="name"
+            placeholder="Steve Jobs"
+          />
+        </div>
         <br />
-        <label for="message"> Your message:</label>
-        <textarea
-          name="message"
-          id="message"
-          rows="8"
-          placeholder="Hi Josh..."
-        ></textarea>
+        <div class="form-group">
+          <label for="message"> Your message:</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="8"
+            placeholder="Hi Josh..."
+          ></textarea>
+        </div>
         <button id="contact-button" type="submit">
           <i class="fas fa-paper-plane"></i>
         </button>
+        <div id="status"></div>
       </form>
     </section>
 
     <!---footer-->
 
     <footer>
-      <p>Josh Peachey - 2020</p>
+      <p id="footer-text">Josh Peachey - 2020</p>
     </footer>
 
     <!---SCRIPTS-->
+    <script src="./JS/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 2500 });

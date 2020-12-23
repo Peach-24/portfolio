@@ -44,10 +44,15 @@ hr {
 
 footer {
   background-color: #22a7a7f3;
-  color: white;
-  font-size: 8px;
-  padding: 5px;
+  padding: 1rem;
   margin-top: 100px;
+}
+
+#footer-text {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
 }
 
 h1 {
@@ -55,10 +60,7 @@ h1 {
   color: whitesmoke;
   padding-bottom: 3vh;
 }
-#subhead {
-  font-family: 'Anonymous Pro', monospace;
-  color: #d1d1d1bd;
-}
+
 .line {
   width: 10em;
   margin: 0 auto;
@@ -68,6 +70,10 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+}
+#subhead {
+  font-family: monospace;
+  color: #d1d1d1bd;
 }
 
 /*  Animation */
@@ -81,7 +87,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 10em;
+    width: 11.5em;
   }
 }
 @keyframes blinkTextCursor {
@@ -99,6 +105,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
   }
   #hero {
     height: 100vh;
@@ -111,15 +118,18 @@ h1 {
   }
   h3 {
     padding: 1rem;
-    /* max-width: 70%; */
     margin: 2rem auto 0;
   }
   img {
     width: 100px;
   }
   #main-img {
-    width: 150px;
+    width: 200px;
   }
+  #smiley-me {
+    margin: 35px 0 0;
+  }
+
   p {
     font-size: 10px;
   }
@@ -133,6 +143,9 @@ h1 {
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     color: white;
+  }
+  .line {
+    font-size: 130%;
   }
   .lang-logo {
     width: 50px;
@@ -204,17 +217,52 @@ h1 {
   textarea {
     width: 100%;
   }
+  #status {
+    background-color: red;
+    border-radius: 3px;
+    min-width: 30%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  #status.success {
+    background-color: rgba(156, 245, 22, 0.678);
+    padding: 0.5rem;
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgba(206, 24, 24, 0.753);
+    color: white;
+    padding: 0.5rem;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 /* iPhone 5/SE */
-@media (min-width: 320px) {
+@media (min-width: 319px) {
   h1 {
     font-size: 2.5rem;
   }
   h2 {
     font-size: 1.5rem;
   }
-
+  #main-img {
+    width: 300px;
+  }
   p {
     font-size: 12px;
   }
@@ -257,23 +305,19 @@ h1 {
 
 /* iPhone Plus  */
 @media (min-width: 400px) {
-  /* #hero {
-    padding: 40% 0 50%;
-  } */
-
   .story-card {
     padding: 1rem;
     margin: 2rem 1rem;
     box-shadow: 2px 2px 5px grey;
+  }
+  #introduction {
+    width: 80%;
   }
   p {
     font-size: 14px;
   }
   h1 {
     font-size: 3rem;
-  }
-  #main-img {
-    width: 200px;
   }
   img {
     width: 140px;
@@ -283,13 +327,13 @@ h1 {
     padding: 0 1rem 1rem;
     margin: 0 1rem 1rem;
   }
+  .line {
+    font-size: 180%;
+  }
 }
 
 /* iPad tablet */
 @media (min-width: 700px) {
-  /* #hero {
-    padding: 40% 0;
-  } */
   h1 {
     font-family: 'Josefin Sans', sans-serif;
     color: whitesmoke;
@@ -309,9 +353,6 @@ h1 {
   }
   img {
     width: 150px;
-  }
-  #main-img {
-    width: 200px;
   }
   p {
     font-size: 16px;
@@ -398,9 +439,6 @@ h1 {
 }
 
 @media (min-width: 1000px) {
-  /* #hero {
-    padding: 8% 0;
-  } */
   h1 {
     font-size: 6rem;
   }
@@ -424,13 +462,9 @@ h1 {
     width: 200px;
   }
 
-  #main-img {
-    width: 300px;
-  }
   #smiley-me {
     width: 200px;
     height: 200px;
-    margin: 35px 0 0;
     z-index: 5;
   }
   p {
