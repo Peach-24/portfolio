@@ -126,6 +126,13 @@ h1 {
   .fab {
     padding: 1rem;
     font-size: 25px;
+    transition: 0.3s ease;
+  }
+  .fab:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    color: white;
   }
   .lang-logo {
     width: 50px;
@@ -397,11 +404,7 @@ h1 {
   h1 {
     font-size: 6rem;
   }
-  h2 {
-    font-family: monospace;
-    color: #d1d1d1bd;
-    font-size: 3rem;
-  }
+
   .fab {
     padding: 2rem;
     font-size: 45px;
