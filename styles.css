@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 
 * {
   max-width: 100%;
@@ -56,7 +56,7 @@ footer {
 }
 
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: whitesmoke;
   padding-bottom: 3vh;
 }
@@ -184,6 +184,7 @@ h1 {
   #project-image {
     min-width: 85%;
     margin: 1rem;
+    object-fit: cover;
   }
   .proj-desc {
     max-width: 90%;
@@ -335,7 +336,7 @@ h1 {
 /* iPad tablet */
 @media (min-width: 700px) {
   h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     color: whitesmoke;
     font-size: 4rem;
   }
