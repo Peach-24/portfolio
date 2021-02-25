@@ -163,13 +163,14 @@ h1 {
     margin: 0 0 1rem;
   }
 
-  #outer-box {
+  #lang-outer-box {
     background-color: rgba(255, 255, 255, 0.42);
     padding: 1rem;
     margin: 1rem 1rem 3rem;
-    box-shadow: 2px 2px 5px #22a7a7f3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #22a7a786;
   }
-  #outer-box img {
+  #lang-outer-box img {
     max-width: 40px;
     margin: 0 1rem 0.5rem;
   }
@@ -182,8 +183,9 @@ h1 {
   }
 
   #project-image {
-    width: 85%;
-    /* margin: 1rem; */
+    width: 350px;
+    height: 250px;
+    margin: 1rem;
     padding: 0;
     object-fit: cover;
   }
@@ -283,13 +285,12 @@ h1 {
     font-size: 15px;
     margin: 0 0 1rem;
   }
-  #outer-box {
+  #lang-outer-box {
     background-color: rgba(255, 255, 255, 0.42);
     padding: 1rem;
     margin: 1rem;
-    box-shadow: 2px 2px 5px #22a7a7f3;
   }
-  #outer-box img {
+  #lang-outer-box img {
     max-width: 40px;
     margin: 0 1rem 0.5rem;
   }
@@ -301,7 +302,7 @@ h1 {
     padding: 10px;
   }
   .project-image {
-    min-width: 90%;
+    min-width: 200px;
     margin: 1rem;
   }
 }
@@ -372,14 +373,13 @@ h1 {
     margin: 0 0 1rem;
   }
 
-  #outer-box {
+  #lang-outer-box {
     background-color: rgba(255, 255, 255, 0.42);
     padding: 1rem;
     width: 70%;
     margin: 1rem auto 3rem;
-    box-shadow: 2px 2px 5px #22a7a7f3;
   }
-  #outer-box img {
+  #lang-outer-box img {
     max-width: 35px;
     margin: 0 1rem 0.5rem;
   }
@@ -484,12 +484,12 @@ h1 {
     padding-top: 0.5rem;
   }
 
-  #outer-box {
+  #lang-outer-box {
     max-width: 50%;
     margin: 2rem auto;
   }
 
-  #outer-box img {
+  #lang-outer-box img {
     max-width: 50px;
     margin: 0 1rem 0.5rem;
   }
@@ -512,7 +512,7 @@ h1 {
     font-size: 17px;
   }
   #project-image {
-    width: 80%;
+    width: 400px;
     margin: 1.5rem;
   }
   /************ BLOG ***********/
